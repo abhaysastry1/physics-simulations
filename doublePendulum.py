@@ -3,6 +3,7 @@ import numpy as np
 from scipy.integrate import odeint
 import matplotlib.pyplot as plt
 from matplotlib.patches import Circle
+# MUST CREATE A FOLDER NAMED 'FRAMES' IN THE SAME FOLDER THAT THIS FILE IS IN
 
 # Pendulum rod lengths (m), bob masses (kg).
 L1, L2 = 1, 1
@@ -99,6 +100,7 @@ def make_plot(i):
     ax.set_aspect('equal', adjustable='box')
     plt.axis('off')
     plt.savefig('frames/_img{:04d}.png'.format(i//di), dpi=72)
+    # MUST CREATE A FOLDER NAMED 'FRAMES' IN THE SAME FOLDER THAT THIS FILE IS IN
     plt.cla()
 
 
